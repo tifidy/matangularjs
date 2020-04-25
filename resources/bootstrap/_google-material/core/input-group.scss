@@ -1,0 +1,116 @@
+.material-input-group 
+{
+	@extend .input-group;
+	border-radius:2px;
+
+	.show-on-focus {display: none;}
+	&.input-group-sm
+	{
+		> .form-control
+		{
+			height: 24px;
+			min-width: 50px;
+			padding-right: 2px;
+		}
+		> .input-group-addon 
+		{
+			height: 24px;
+			line-height:12px;
+			padding-left:2px;
+		}
+
+	}
+
+	> .form-control{
+		border:1px solid #9b9b9b;
+		color:#000;
+		caret-color: #007aff;
+		@include placeholder {
+			font-size: 12px;
+			font-weight: 400;
+			letter-spacing: -0.2px;
+		}
+		&.placeholder-left {
+			@include placeholder {
+				text-align: left;
+			}
+		}
+		&.placeholder-center {
+			@include placeholder {
+				text-align: center;
+			}
+		}
+		&.placeholder-right {
+			@include placeholder {
+				text-align: right;
+			}
+		}
+		&:focus {
+			border: 1px solid #007aff;
+		    -webkit-box-shadow: none;
+    		box-shadow: none;
+			@include placeholder {
+				color:transparent;
+			}
+		}
+		&:focus+.input-group-addon {//input focus alırsa yanındaki element borderı da input border focus ile aynı olsun
+			border: 1px solid #007aff;
+			border-left:0;
+		    -webkit-box-shadow: none;
+    		box-shadow: none;
+    		.show-on-focus { //input focus yediyse göster
+				display: block;
+			}
+
+		}
+
+		&:not(:placeholder-shown)+.input-group-addon //input data varsa göster yani placeholder gözükmüyorsa
+		{
+			.show-on-focus {
+				display: block;
+			}
+		}
+
+	}
+
+	> .input-group-addon {
+		border:1px solid #9b9b9b;
+		background-color: #fff;
+		font-size: 10px;
+		font-weight: 500;
+		color:#000;
+	}
+
+
+
+	.input-group-addon+.form-control {
+		border-left:0;
+	}
+	.form-control+.input-group-addon {
+		border-left:0;
+	}
+
+
+
+
+
+
+
+
+
+	&.material-input-group-info {
+		> .form-control {
+			border-color:#538ed3;
+			@include placeholder {
+				color:#98bbe5;
+				font-size:14px;
+				letter-spacing:-0.2px;
+			}
+		}
+		>.input-group-addon {
+			border-color:#538ed3;
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+.material-circle {
+width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 23px;
+	&.circle-dark{
+		background-color: rgba(0, 0, 0, 0.54);
+	}
+
+}
+
+.collapse-rotation
+{
+	.fa {
+		transition: all .2s;
+	}
+	&[aria-expanded="false"] {
+
+	}
+	&[aria-expanded="true"] .material-circle.circle-dark>.fa {
+		transform:  rotate(180deg);
+		line-height: 1px;
+	}
+}

@@ -1,0 +1,14 @@
+node_modules/
+*.ps1
+*.nuspec
+.vs
+.idea
+assets/src/core.js
+assets/src/index.core.css
+assets/src/login.core.css
+dist
+package-lock.json
+.DS_Store
+.scannerwork
+assets/src/new/component-min.js
+assets/src/new/component-partials.js

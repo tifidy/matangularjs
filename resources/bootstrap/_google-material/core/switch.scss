@@ -1,0 +1,362 @@
+$background_color_off: #c6c6c6;
+$background_color_on: #f9c6a3;
+$background_color_on_disabled: #f7e1d0;
+$toggle_off: #ffffff;
+$toggle_on: #ff7200;
+$toggle_off_disabled: #999;
+$toggle_on_disabled: #fccba3;
+
+
+/* switch bg area when not selected */
+/* switch pointer when not selected */
+/* switch bg area when selected */
+/* switch pointer when selected */
+.material-checkbox-switch 
+{
+    &.switch-inline {
+        display:inline-block;
+    }
+    >input[type="checkbox"] 
+    {
+        display: none;
+        &:checked+label {
+            &::before {
+                background-color: $background_color_on;
+            }
+            &::after {
+                background-color: $toggle_on;
+                left: 20px;
+            }
+        }
+    }
+    >label 
+    {
+        cursor: pointer;
+        height: 0px;
+        position: relative;
+        width: 40px;
+        &::before {
+            background-color: $background_color_off;
+            border-radius: 8px;
+            content: '';
+            height: 16px;
+            margin-top: -8px;
+            position: absolute;
+            transition: all 0.4s ease-in-out;
+            width: 40px;
+        }
+        &::after {
+            background-color: $toggle_off;
+            border-radius: 16px;
+            content: '';
+            height: 24px;
+            left: -4px;
+            margin-top: -8px;
+            position: absolute;
+            top: -4px;
+            transition: all 0.3s ease-in-out;
+            width: 24px;
+            box-shadow: 0px 0px 3px #333;
+        }
+    }
+    >input[type="checkbox"][disabled] + label 
+    {
+            background-color: $toggle_off_disabled;
+        &::before {
+        }
+        &::after {
+            background-color: $background_color_off;
+        }
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+    >input[type="checkbox"][disabled] 
+    {
+        &:checked+label 
+        {
+            &::before 
+            {
+                background-color: $background_color_on_disabled;
+            }
+            &::after 
+            {
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14);
+                background-color: $toggle_on_disabled;
+            }
+        }
+    }
+
+
+
+
+
+
+
+    //orange
+    &.switch-default 
+    {
+        >input[type="checkbox"] 
+        {
+            &:checked+label {
+                &::before {
+                    background-color: $background_color_on;
+                }
+                &::after {
+                    background-color: $toggle_on;
+                }
+            }
+        }
+        >label 
+        {
+            &::before {
+                background-color: $background_color_off;
+            }
+            &::after {
+                background-color: $toggle_off;
+            }
+        }
+        >input[type="checkbox"][disabled] + label 
+        {
+            background-color: $toggle_off_disabled;
+            &::after {
+                background-color: $background_color_off;
+            }
+        }
+        >input[type="checkbox"][disabled] 
+        {
+            &:checked+label 
+            {
+                &::before 
+                {
+                    background-color: $background_color_on_disabled;
+                }
+                &::after 
+                {
+                    background-color: $toggle_on_disabled;
+                }
+            }
+        }
+    }
+
+$toggle_off: #ffffff;
+$toggle_off_disabled: #999;
+$toggle_on_disabled: rgb(131, 178, 255);
+
+$toggle_on: #347ab7;//change only this!
+$background_color_on: lighten($toggle_on,30%);
+$background_color_off: #c6c6c6;
+$background_color_on_disabled: rgb(199, 220, 255);
+
+
+    &.switch-info 
+    {
+        >input[type="checkbox"] 
+        {
+            &:checked+label {
+                &::before {
+                    background-color: $background_color_on;
+                }
+                &::after {
+                    background-color: $toggle_on;
+                }
+            }
+        }
+        >label 
+        {
+            &::before {
+                background-color: $background_color_off;
+            }
+            &::after {
+                background-color: $toggle_off;
+            }
+        }
+        >input[type="checkbox"][disabled] + label 
+        {
+            background-color: $toggle_off_disabled;
+            &::after {
+                background-color: $background_color_off;
+            }
+        }
+        >input[type="checkbox"][disabled] 
+        {
+            &:checked+label 
+            {
+                &::before 
+                {
+                    background-color: $background_color_on_disabled;
+                }
+                &::after 
+                {
+                    background-color: $toggle_on_disabled;
+                }
+            }
+        }
+    }
+
+$toggle_off: #ffffff;
+$toggle_off_disabled: #999;
+$toggle_on_disabled: rgb(131, 178, 255);
+
+$toggle_on: #efad4d;//change only this!
+$background_color_on: lighten($toggle_on,30%);
+$background_color_off: #c6c6c6;
+$background_color_on_disabled: rgb(199, 220, 255);
+
+
+    &.switch-warning 
+    {
+        >input[type="checkbox"] 
+        {
+            &:checked+label {
+                &::before {
+                    background-color: $background_color_on;
+                }
+                &::after {
+                    background-color: $toggle_on;
+                }
+            }
+        }
+        >label 
+        {
+            &::before {
+                background-color: $background_color_off;
+            }
+            &::after {
+                background-color: $toggle_off;
+            }
+        }
+        >input[type="checkbox"][disabled] + label 
+        {
+            background-color: $toggle_off_disabled;
+            &::after {
+                background-color: $background_color_off;
+            }
+        }
+        >input[type="checkbox"][disabled] 
+        {
+            &:checked+label 
+            {
+                &::before 
+                {
+                    background-color: $background_color_on_disabled;
+                }
+                &::after 
+                {
+                    background-color: $toggle_on_disabled;
+                }
+            }
+        }
+    }
+
+$toggle_off: #ffffff;
+$toggle_off_disabled: #999;
+$toggle_on_disabled: rgb(131, 178, 255);
+
+$toggle_on: #d8534f;//change only this!
+$background_color_on: lighten($toggle_on,30%);
+$background_color_off: #c6c6c6;
+$background_color_on_disabled: rgb(199, 220, 255);
+
+
+    &.switch-danger 
+    {
+        >input[type="checkbox"] 
+        {
+            &:checked+label {
+                &::before {
+                    background-color: $background_color_on;
+                }
+                &::after {
+                    background-color: $toggle_on;
+                }
+            }
+        }
+        >label 
+        {
+            &::before {
+                background-color: $background_color_off;
+            }
+            &::after {
+                background-color: $toggle_off;
+            }
+        }
+        >input[type="checkbox"][disabled] + label 
+        {
+            background-color: $toggle_off_disabled;
+            &::after {
+                background-color: $background_color_off;
+            }
+        }
+        >input[type="checkbox"][disabled] 
+        {
+            &:checked+label 
+            {
+                &::before 
+                {
+                    background-color: $background_color_on_disabled;
+                }
+                &::after 
+                {
+                    background-color: $toggle_on_disabled;
+                }
+            }
+        }
+    }
+
+$toggle_off: #ffffff;
+$toggle_off_disabled: #999;
+$toggle_on_disabled: rgb(131, 178, 255);
+
+$toggle_on: #5dd6a0;
+$background_color_on: lighten($toggle_on,30%);
+$background_color_off: #c6c6c6;
+$background_color_on_disabled: rgb(199, 220, 255);
+
+
+    &.switch-success 
+    {
+        >input[type="checkbox"] 
+        {
+            &:checked+label {
+                &::before {
+                    background-color: $background_color_on;
+                }
+                &::after {
+                    background-color: $toggle_on;
+                }
+            }
+        }
+        >label 
+        {
+            &::before {
+                background-color: $background_color_off;
+            }
+            &::after {
+                background-color: $toggle_off;
+            }
+        }
+        >input[type="checkbox"][disabled] + label 
+        {
+            background-color: $toggle_off_disabled;
+            &::after {
+                background-color: $background_color_off;
+            }
+        }
+        >input[type="checkbox"][disabled] 
+        {
+            &:checked+label 
+            {
+                &::before 
+                {
+                    background-color: $background_color_on_disabled;
+                }
+                &::after 
+                {
+                    background-color: $toggle_on_disabled;
+                }
+            }
+        }
+    }
+}
+

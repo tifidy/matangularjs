@@ -1,0 +1,49 @@
+@include material-color-class("all", background-color);
+// bg-red
+// bg-pink
+// bg-purple
+// bg-deep-purple
+// bg-indigo
+// bg-blue
+// bg-light-blue
+// bg-cyan
+// bg-teal
+// bg-green
+// bg-light-green
+// bg-lime
+// bg-yellow
+// bg-amber
+// bg-orange
+// bg-deep-orange
+// bg-brown
+// bg-grey
+// bg-blue-grey
+// bg-black
+// bg-white
+@include material-color-class("all", color);
+// text-red
+// text-pink
+// text-purple
+// text-deep-purple
+// text-indigo
+// text-blue
+// text-light-blue
+// text-cyan
+// text-teal
+// text-green
+// text-light-green
+// text-lime
+// text-yellow
+// text-amber
+// text-orange
+// text-deep-orange
+// text-brown
+// text-grey
+// text-blue-grey
+// text-black
+// text-white
+
+
+.text-gray-9e9e9e {
+	color: #9e9e9e;
+}

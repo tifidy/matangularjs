@@ -1,0 +1,22 @@
+<div class="textarea-material textarea-multiple" ng-click="$ctrl.setFocusOn($event);">
+	<p ng-transclude="label" class="mb-0"></p>
+	<div class="chip-container">
+		<span class="chip chip-default" ng-class="{'selected':chip.selected}" ng-click="$ctrl.setSelected($event,chip)" ng-repeat="chip in $ctrl.chipContainer track by $index">{{chip.name}} <span class="chip-close" ng-click="$ctrl.removeChip($event, chip)"></span></span>
+		<div class="chip-entryzone-wrapper">
+			<input type="text" class="chip-entryzone" maxlength="20" placeholder="{{$ctrl.placeholder}}" ng-model="$ctrl.newChip" ng-backspace="$ctrl.switchFocusToChip()" ng-change="$ctrl.searchInputOnChange()" ng-keydown="$ctrl.searchInputOnKeydown($event)" ng-focus="$ctrl.searchInputOnFocus()" ng-blur="$ctrl.searchInputOnBlur()">
+			<div class="dropdown dropdown-material" ng-class="{'open':$ctrl.isSearchInputisActive}">
+				<ul class="dropdown-menu" style="max-height: 286px;" aria-labelledby="dropdownMenu1">
+
+					<li ng-repeat="food in $ctrl.foodListFiltered" ng-if="food.new"><i ng-transclude="icon"></i>
+						<a ng-class="{'selected':food.selected}" ng-click="$ctrl.addChipOnClick(food)">
+
+						<span ng-if="$ctrl.canAddNewItem">EKLE: [<u><span ng-bind-html="food.name"></span></u>]</span>
+						<span ng-if="!$ctrl.canAddNewItem">[<u><span ng-bind-html="food.name"></span></u>] bulunamadı</span>
+					
+					</a></li>
+					<li ng-repeat="food in $ctrl.foodListFiltered" ng-if="!food.new"><i ng-transclude="icon"></i><a ng-class="{'selected':food.selected}" ng-click="$ctrl.addChipOnClick(food)"> <span ng-bind-html="food.highlighted"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

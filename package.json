@@ -1,0 +1,29 @@
+{
+	"name": "simple app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"dependencies": {
+		"del": "^2.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp": "^4.0.2",
+		"gulp-cssmin": "^0.1.7",
+		"gulp-string-replace": "^0.4.0",
+		"gulp-uglify": "3.0.0",
+		"gulp-noop": "^1.0.0",
+		"gulp-sass": "4.0.2",
+		"gulp-ng-html2js": "0.2.3",
+		"gulp-htmlmin": "5.0.1"
+	},
+	"devDependencies": {
+		"eslint": "^6.7.2",
+		"eslint-plugin-angular": "^4.0.1",
+		"eslint-plugin-html": "^6.0.0",
+		"browser-sync": "^2.26.7"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC"
+}

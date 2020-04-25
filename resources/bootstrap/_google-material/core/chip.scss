@@ -1,0 +1,59 @@
+.chip {
+	&.chip-default {
+		position: relative;
+
+		background-color:#fff;
+		border-radius: 15px;
+		border: 1px solid #cccccc;
+		padding:5px 36px 5px 12px; 
+
+		margin-top:12px;
+		margin-right:12px;
+
+		font-size:12px;
+		letter-spacing: 0.13px;
+		color:#000;
+
+		display: inline-block;
+
+
+
+		&.selected {
+			background-color: #ECE1FD;
+		}
+		&:last-of-type {
+			margin-right:1px;
+		}
+		&:hover {
+			 box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+		}
+
+		span.chip-close {
+			width:15px;
+			height:15px;
+			position: absolute;
+			right:12px;
+			top:50%;
+			transform: translateY(-50%);
+			&:hover {
+				cursor:pointer;
+			}
+			&:before {
+			    font: normal normal normal 14px/1 FontAwesome;
+			    font-size: inherit;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+		        content: "\f057";
+		        color:#d93025;
+				
+		        position: absolute;
+		        top:50%;
+		        left:50%;
+		        transform: translateX(-50%) translateY(-50%);
+				font-size: 14px;
+
+			}
+		}
+	}	
+}

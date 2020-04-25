@@ -1,0 +1,212 @@
+.radio {
+    &.radio-material.radio-inline.no-style {
+        margin-top: 0 !important;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &.radio-material {
+        &:not(.no-style) {
+
+            $border-color: #9e9e9e;
+
+
+            &.radio-inline {
+                display:inline-block;
+                margin-top: 0 !important;
+                padding-left: 5px;
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            >input[type="radio"] {
+                @extend .visuallyhidden;
+            }
+
+            &>label {
+                position: relative;
+                padding-left: 24px;
+                line-height: 16px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    left: 0;
+
+                    border: 2px solid $border-color;
+                    border-radius: 9px;
+                    -webkit-transition: background-color .4s;
+                    transition: background-color .4s;
+                }
+
+                &:after {
+                    content: "";
+                    background-color: #fff;
+                    -webkit-transition: background-color .4s;
+                    transition: background-color .4s;
+                }
+            }
+        
+            &.radio-lg>input[type="radio"]
+            {
+                &+label {
+                    padding-left: 32px;
+                    line-height: 20px;
+                    &:before {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 12px;
+                    }
+                }
+                &:checked {
+                    &+label {
+                        &:after {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }   
+                }
+            }
+
+            >input[type="radio"]:checked {
+
+                &:not([disabled])+label.orange-on-active {
+                    color: #f47a1f;
+
+                    >span {
+                        color: #f47a1f;
+                    }
+                }
+
+                &:not([disabled])+label:before {
+                    background-color: #fff;
+                    border-color: #f47a1f;
+                    -webkit-transition: border-color .4s, background-color .4s;
+                    transition: border-color .4s, background-color .4s;
+                }
+
+                &+label:after {
+                    content: "";
+                    background-color: #f47a1f;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 9px;
+                    position: absolute;
+                    left: 4px;
+                    top: 4px;
+                    -webkit-transition: background-color .4s;
+                    transition: background-color .4s;
+                }
+
+                &[disabled] {
+                    &+label:before {
+                        background-color: #fff;
+                        border-color: #D5D5D5;
+                    }
+
+                    &+label:after {
+                        background-color: #D5D5D5;
+                    }
+                }
+            }
+
+            >input[type="radio"] {
+                &[disabled] {
+                    &+label:before {
+                        background-color: #fff;
+                        border-color: #D5D5D5;
+                    }
+
+                    &+label {
+                        &:hover {
+                            cursor: not-allowed;
+                        }
+
+                        color: #d5d5d5 !important;
+
+                        >span {
+                            color: #d5d5d5 !important;
+                        }
+                    }
+                }
+            }
+            >input[type='radio']:focus {
+                &+label:before {
+                    outline: 5px auto -webkit-focus-ring-color;
+                    outline-color: #f59423;
+                    outline-offset: -2px;
+                }
+            }
+
+            >input[type='radio']:active {
+                &+label:before {
+                    outline: none;
+                    outline-offset: unset;
+                }
+            }
+        }
+    }
+
+    &.radio-material:not(.no-style) 
+    {
+        &.radio-info {
+            input[type="radio"]:checked:not(.no-style) {
+                &+label:before {
+                    border-color: #347ab7 ;
+                }
+                &+label:after {
+                    background-color: #347ab7;
+                }
+                &:focus+label:before {
+                    outline:#347ab7  auto 5px;;
+                }
+            }
+        }
+
+        &.radio-danger {
+            input[type="radio"]:checked:not(.no-style) {
+                &+label:before {
+                    border-color: #d8534f ;
+                }
+                &+label:after {
+                    background-color: #d8534f;
+                }
+                &:focus+label:before {
+                    outline:#d8534f  auto 5px;;
+                }
+            }
+        }
+
+        &.radio-warning {
+            input[type="radio"]:checked:not(.no-style) {
+                &+label:before {
+                    border-color: #efad4d ;
+                }
+                &+label:after {
+                    background-color: #efad4d;
+                }
+                &:focus+label:before {
+                    outline:#efad4d  auto 5px;;
+                }
+            }
+        }
+
+        &.radio-success {
+            input[type="radio"]:checked:not(.no-style) {
+                &+label:before {
+                    border-color: #5dd6a0 ;
+                }
+                &+label:after {
+                    background-color: #5dd6a0;
+                }
+                &:focus+label:before {
+                    outline:#5dd6a0  auto 5px;;
+                }
+            }
+        }
+    }
+}

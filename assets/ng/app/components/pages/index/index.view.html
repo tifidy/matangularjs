@@ -1,0 +1,320 @@
+<h3 class="mb-30">Homepage</h3>
+
+<chip chip-container="$ctrl.listOfSelected" on-container-change="$ctrl.onContainerChange" can-add-new-item="true" dropdown-container="$ctrl.listOfCars" placeholder="'+ Type a car name and select it from a list'">
+	<chip-label>Add Cars below:</chip-label>
+	<dropdown-icon class="fa fa-map-marker fa-17 text-gray-2" aria-hidden="true"></dropdown-icon>
+</chip>
+
+
+<div style="padding-top:20px;">
+	<div class="card mb-30">
+		<h5 class="card-header">16 Column grid</h5>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-8">
+					<p class="mb-0"><span class="fw-700">container size </span>sm: 540px</p>
+					<p class="mb-0"><span class="fw-700">container size </span>md: 720px</p>
+					<p class="mb-0"><span class="fw-700">container size </span>lg: 960px</p>
+					<p class="mb-0"><span class="fw-700">container size </span>xl: 1140px</p>
+					<p class="mb-10"><span class="fw-700">container size </span>xxl: 1600px</p>
+				</div>
+				<div class="col-md-8">
+					<p class="mb-0"><span class="fw-700">breakpoints </span>sm: 	 0 - 540px</p>
+					<p class="mb-0"><span class="fw-700">breakpoints </span>md:  615px - 720px</p>
+					<p class="mb-0"><span class="fw-700">breakpoints </span>lg:  794px - 960px</p>
+					<p class="mb-0"><span class="fw-700">breakpoints </span>xl:  960px - 1320px</p>
+					<p class="mb-0"><span class="fw-700">breakpoints </span>xxl:1320px - 1600px</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#000;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#d5d5d5;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#000;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#d5d5d5;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#000;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#d5d5d5;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#000;">a</div>
+				<div class="col-lg-2 col-xl-2 col-xxl-2" style="background-color:#d5d5d5;">a</div>
+			</div>
+		</div>
+	</div>
+<!-- ||||||||||||||||||||||||||||||||||CHECKBOX / RADIO START |||||||||||||||||||||||||||||||||||||||||| -->
+	<div class="card mb-30">
+		<h5 class="card-header">Checkbox / radiobox</h5>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-16">
+					<div class="form-group">
+						<div class="checkbox checkbox-material checkbox-inline">
+							<input id="checkbox_test1" name="rememberMe" type="checkbox">
+							<label for="checkbox_test1">Remember me</label>
+						</div>
+	
+						<div class="checkbox checkbox-material checkbox-danger checkbox-inline">
+							<input id="checkbox_test2" name="rememberMe" type="checkbox">
+							<label for="checkbox_test2">Remember me</label>
+						</div>
+
+						<div class="checkbox checkbox-material checkbox-info checkbox-inline">
+							<input id="checkbox_test3" name="rememberMe" type="checkbox">
+							<label for="checkbox_test3">Remember me</label>
+						</div>
+	
+						<div class="checkbox checkbox-material checkbox-warning checkbox-inline">
+							<input id="checkbox_test4" name="rememberMe" type="checkbox">
+							<label for="checkbox_test4">Remember me</label>
+						</div>
+
+						<div class="checkbox checkbox-material checkbox-success checkbox-inline">
+							<input id="checkbox_test5" name="rememberMe" type="checkbox">
+							<label for="checkbox_test5">Remember me</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="checkbox checkbox-material checkbox-lg checkbox-inline">
+							<input id="checkbox_test12" name="rememberMe" type="checkbox">
+							<label for="checkbox_test12">Remember me</label>
+						</div>
+	
+						<div class="checkbox checkbox-material checkbox-lg checkbox-danger checkbox-inline">
+							<input id="checkbox_test23" name="rememberMe" type="checkbox">
+							<label for="checkbox_test23">Remember me</label>
+						</div>
+
+						<div class="checkbox checkbox-material checkbox-lg checkbox-info checkbox-inline">
+							<input id="checkbox_test34" name="rememberMe" type="checkbox">
+							<label for="checkbox_test34">Remember me</label>
+						</div>
+	
+						<div class="checkbox checkbox-material checkbox-lg checkbox-warning checkbox-inline">
+							<input id="checkbox_test45" name="rememberMe" type="checkbox">
+							<label for="checkbox_test45">Remember me</label>
+						</div>
+
+						<div class="checkbox checkbox-material checkbox-lg checkbox-success checkbox-inline">
+							<input id="checkbox_test56" name="rememberMe" type="checkbox">
+							<label for="checkbox_test56">Remember me</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-16">
+					<div class="form-group">
+						<div class="radio radio-material radio-inline">
+							<input id="radiobox_test1" name="rememberMe" type="radio">
+							<label for="radiobox_test1">Choose me!</label>
+						</div>
+	
+						<div class="radio radio-material radio-danger radio-inline">
+							<input id="radiobox_test2" name="rememberMe" type="radio">
+							<label for="radiobox_test2">Choose me!</label>
+						</div>
+
+						<div class="radio radio-material radio-info radio-inline">
+							<input id="radiobox_test3" name="rememberMe" type="radio">
+							<label for="radiobox_test3">Choose me!</label>
+						</div>
+
+						<div class="radio radio-material radio-warning radio-inline">
+							<input id="radiobox_test4" name="rememberMe" type="radio">
+							<label for="radiobox_test4">Choose me!</label>
+						</div>
+
+						<div class="radio radio-material radio-success radio-inline">
+							<input id="radiobox_test5" name="rememberMe" type="radio">
+							<label for="radiobox_test5">Choose me!</label>
+						</div>
+					</div>
+	
+					<div class="form-group">
+						<div class="radio radio-material radio-inline radio-lg">
+							<input id="radiobox_test11" name="rememberMe" type="radio">
+							<label for="radiobox_test11">Choose me!</label>
+						</div>
+	
+						<div class="radio radio-material radio-danger radio-inline radio-lg">
+							<input id="radiobox_test22" name="rememberMe" type="radio">
+							<label for="radiobox_test22">Choose me!</label>
+						</div>
+
+						<div class="radio radio-material radio-info radio-inline radio-lg">
+							<input id="radiobox_test33" name="rememberMe" type="radio">
+							<label for="radiobox_test33">Choose me!</label>
+						</div>
+
+						<div class="radio radio-material radio-warning radio-inline radio-lg">
+							<input id="radiobox_test44" name="rememberMe" type="radio">
+							<label for="radiobox_test44">Choose me!</label>
+						</div>
+
+						<div class="radio radio-material radio-success radio-inline radio-lg">
+							<input id="radiobox_test55" name="rememberMe" type="radio">
+							<label for="radiobox_test55">Choose me!</label>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ||||||||||||||||||||||||||||||||||CHECKBOX / RADIO END |||||||||||||||||||||||||||||||||||||||||| -->
+
+
+	<div class="card mb-30">
+		<h5 class="card-header">Switch</h5>
+		<div class="card-body">
+			
+		<div class="form-group">
+			<div class="material-checkbox-switch switch-inline ml-15">
+				<input id="switch_test1" type="checkbox">
+				<label for="switch_test1"></label>
+			</div>
+			<div class="material-checkbox-switch switch-inline ml-15 switch-info">
+				<input id="switch_test2" type="checkbox">
+				<label for="switch_test2"></label>
+			</div>
+
+			<div class="material-checkbox-switch switch-inline ml-15 switch-success">
+				<input id="switch_test3" type="checkbox">
+				<label for="switch_test3"></label>
+			</div>	
+
+			<div class="material-checkbox-switch switch-inline ml-15 switch-danger">
+				<input id="switch_test4" type="checkbox">
+				<label for="switch_test4"></label>
+			</div>
+
+			<div class="material-checkbox-switch switch-inline ml-15 switch-warning">
+				<input id="switch_test5" type="checkbox">
+				<label for="switch_test5"></label>
+			</div>
+		</div>
+
+		</div>
+	</div>
+
+
+	<div class="card mb-30">
+		<h5 class="card-header">Range</h5>
+		<div class="card-body">
+
+		<div class="form-group">			
+			<input class="material-range range-orange" id="switch_test1" type="range">
+		</div>
+		<div class="form-group" style="background-color:#94c562;">
+			<input class="material-range range-white" id="switch_test1" type="range">
+		</div>
+
+		</div>
+	</div>
+
+	<div class="card mb-30">
+		<h5 class="card-header">Range</h5>
+		<div class="card-body">
+
+			<i class="fa fa-user"></i>
+
+		</div>
+	</div>
+
+	<div class="card mb-30">
+		<h5 class="card-header">MODALS</h5>
+		<div class="card-body">
+
+			<button type="button" class="btn btn-primary mt-50" data-toggle="modal" data-target="#exampleModal">
+				  Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+		</div>
+	</div>
+
+	
+
+	<div class="card mb-40">
+		<h5 class="card-header">INPUTS</h5>
+		<div class="card-body">
+			<div class="form-group apply-pr">
+				<input type="text" class="form-control form-control-material material-lg" id="test_input" name="username" required="" >
+				<label for="test_input" class="form-control-placeholder">Username</label>
+			</div>
+			<div class="form-group apply-pr">
+                <input type="text" class="form-control form-control-material" id="test_input_Regular" name="RestaurantName" required="">
+                <label for="test_input_Regular" class="form-control-placeholder">Username</label>
+			</div>
+
+			<div class="form-group apply-pr">
+                <input type="text" class="form-control form-control-material" id="test_input_Regular1" name="RestaurantName" >
+                <label for="test_input_Regular1" class="form-control-placeholder">Username</label>
+			</div>
+
+
+			<h5>Material input validation [focused]</h5>
+			<div class="form-group apply-pr is-invalid">
+                <input type="text" class="form-control form-control-material" id="test_input_Regula2" name="RestaurantName" >
+                <label for="test_input_Regula2" class="form-control-placeholder">Username</label>
+                <div class="form-control-append-right invalid-indicator p-5"><i class="fa fa-times fa-18 text-red"></i></div>
+			</div>
+
+			<div class="form-group apply-pr is-valid">
+                <input type="text" class="form-control form-control-material" id="test_input_Regular3" name="RestaurantName" >
+                <label for="test_input_Regular3" class="form-control-placeholder">Username</label>
+                <div class="form-control-append-right valid-indicator p-5"><i class="fa fa-check fa-18 text-green"></i></div>
+			</div>
+
+			<h5>Material LG input validation</h5>
+			<div class="form-group apply-pr is-invalid">
+                <input type="text" class="form-control form-control-material material-lg" id="test_input_Regular4" name="RestaurantName" required>
+                <label for="test_input_Regular4" class="form-control-placeholder">Username</label>
+                <div class="form-control-append-right invalid-indicator p-5"><i class="fa fa-times text-red"></i></div>
+			</div>
+
+			<div class="form-group apply-pr is-valid">
+                <input type="text" class="form-control form-control-material material-lg" id="test_input_Regular5" name="RestaurantName" required>
+                <label for="test_input_Regular5" class="form-control-placeholder">Username</label>
+                <div class="form-control-append-right valid-indicator p-5"><i class="fa fa-check text-green"></i></div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="card mb-40">
+		<h5 class="card-header">INPUTS</h5>
+		<div class="card-body">
+			
+			<button type="button" class="btn-material btn-primary"><span>Primary</span></button>
+			<button type="button" class="btn-material btn-secondary"><span>Secondary</span></button>
+			<button type="button" class="btn-material btn-success"><span>Success</span></button>
+			<button type="button" class="btn-material btn-danger"><span>Danger</span></button>
+			<button type="button" class="btn-material btn-warning"><span>Warning</span></button>
+			<button type="button" class="btn-material btn-info"><span>Info</span></button>
+			<button type="button" class="btn-material btn-light"><span>Light</span></button>
+			<button type="button" class="btn-material btn-dark"><span>Dark</span></button>
+
+		</div>
+	</div>

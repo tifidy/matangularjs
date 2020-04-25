@@ -1,0 +1,24 @@
+.link-text-dark {
+	font-size:18px;
+	font-weight: 700;
+	font-family: Roboto, sans-serif;
+	color:#ff7200;
+	&:hover {
+		color:#ff7200;
+		text-decoration: none;
+	}
+}
+
+.link-material {
+    &.link-blue {
+        color: #1a73e8;
+        font-weight: 500;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
